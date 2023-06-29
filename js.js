@@ -6,38 +6,30 @@ function B1() {
         num1 = document.getElementById("num1"),
         num2 = document.getElementById("num2"),
         num3 = document.getElementById("num3"),
-        n = n1.value;
-    // tim so be nhat
-    if (Number(n) > n2.value) {
-        n = n2.value;
-        if (Number(n) > n3.value) {
-            n = n3.value;
-        }
+        n;
+    a = n1.value;
+    b = n2.value;
+    c = n3.value;
+    n = a;
+    console.log(a, b, c);
+    if (Number(a) > Number(b)) {
+        n = b;
+        b = a;
+        a = n;
     }
-    num1.value = n;
-    n = n1.value;
-    if (Number(n) < n2.value) {
-        n = n2.value;
-        if (Number(n) < n3.value) {
-            n = n3.value;
-        }
+    if (Number(a) > Number(c)) {
+        n = c;
+        c = a;
+        a = n;
     }
-    num3.value = n;
-    if (n1.value == num3.value || n1.value == num1.value) {
-        num2.value = n1.value;
-        if (n2.value == num3.value || n2.value == num1.value) {
-            num2.value = n2.value;
-            if (n3.value == num3.value || n3.value == num1.value) {
-                num2.value = n3.value;
-            } else {
-                num2.value = n3.value;
-            }
-        } else {
-            num2.value = n2.value;
-        }
-    } else {
-        num2.value = n1.value;
+    if (Number(b) > Number(c)) {
+        n = c;
+        c = b;
+        b = n;
     }
+    num1.value = a;
+    num2.value = b;
+    num3.value = c;
     console.log(num1.value);
     console.log(num2.value);
     console.log(num3.value);
@@ -82,7 +74,6 @@ function B4() {
         a = Number(n7.value),
         b = Number(n8.value),
         c = Number(n9.value);
-
     //kiểm tra xem ba cạnh có phải là ba cạnh của một tam giác hay không
     if (a < b + c && b < a + c && c < a + b) {
         //điều kiện tam giác vuông (định lý pitago)

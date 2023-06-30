@@ -34,6 +34,40 @@ function B1() {
     console.log(num2.value);
     console.log(num3.value);
 }
+
+
+function B2() {
+    var
+        tv = document.getElementById("thanhvien"),
+        tb = document.getElementById("thongbao"),
+        lc = document.getElementById("loichao");
+    ;
+    switch (tv.value) {
+        case 'Bố':
+            lc.value = "Xin Chào 'Bố' Chúc Bạn Một Ngày Tốt Lành";
+            console.log(lc.value);
+            break;
+        case 'Mẹ':
+            lc.value = "Xin Chào 'Mẹ' Chúc Bạn Một Ngày Tốt Lành";
+            console.log(lc.value);
+            break;
+        case 'Anh':
+            lc.value = "Xin Chào 'Anh' Chúc Bạn Một Ngày Tốt Lành";
+            console.log(lc.value);
+            break;
+        case 'Em':
+            lc.value = "Xin Chào 'Em' Chúc Bạn Một Ngày Tốt Lành";
+            console.log(lc.value);
+            break;
+        default:
+            lc.value = "Xin Chào Bạn Vui Lòng Nhập Đúng Người Dùng Vd: Bố, Mẹ, Anh, Em";
+            console.log(lc.value);
+
+    }
+}
+
+
+
 function B3() {
     var
         n4 = document.getElementById("n4"),

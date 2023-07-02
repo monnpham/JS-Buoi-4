@@ -36,11 +36,7 @@ function arrange_int() {
 }
 
 
-<<<<<<< HEAD
 function greeting() {
-=======
-function B2() {
->>>>>>> b031c0e19065ebe5d5cddff04ad027e22649a679
     var
         tv = document.getElementById("thanhvien"),
         tb = document.getElementById("thongbao"),

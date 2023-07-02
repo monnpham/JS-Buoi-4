@@ -1,4 +1,4 @@
-function B1() {
+function arrange_int() {
     var
         n1 = document.getElementById("n1"),
         n2 = document.getElementById("n2"),
@@ -34,7 +34,41 @@ function B1() {
     console.log(num2.value);
     console.log(num3.value);
 }
-function B3() {
+
+
+function greeting() {
+    var
+        tv = document.getElementById("thanhvien"),
+        tb = document.getElementById("thongbao"),
+        lc = document.getElementById("loichao");
+    ;
+    switch (tv.value) {
+        case 'Bố':
+            lc.value = "Xin Chào 'Bố' Chúc Bạn Một Ngày Tốt Lành";
+            console.log(lc.value);
+            break;
+        case 'Mẹ':
+            lc.value = "Xin Chào 'Mẹ' Chúc Bạn Một Ngày Tốt Lành";
+            console.log(lc.value);
+            break;
+        case 'Anh':
+            lc.value = "Xin Chào 'Anh' Chúc Bạn Một Ngày Tốt Lành";
+            console.log(lc.value);
+            break;
+        case 'Em':
+            lc.value = "Xin Chào 'Em' Chúc Bạn Một Ngày Tốt Lành";
+            console.log(lc.value);
+            break;
+        default:
+            lc.value = "Xin Chào Bạn Vui Lòng Nhập Đúng Người Dùng Vd: Bố, Mẹ, Anh, Em";
+            console.log(lc.value);
+
+    }
+}
+
+
+
+function even_number() {
     var
         n4 = document.getElementById("n4"),
         n5 = document.getElementById("n5"),
@@ -65,7 +99,7 @@ function B3() {
     console.log(le.value);
 }
 
-function B4() {
+function triangle() {
     var
         n7 = document.getElementById("n7"),
         n8 = document.getElementById("n8"),
